@@ -1,11 +1,11 @@
-angular.module( 'home', ['welcome'] ).config( function( $stateProvider ) {
+angular.module( 'home', ['welcome', 'login'] ).config( function( $stateProvider ) {
   $stateProvider.state( 'home', {
     url: '/home',
     templateUrl: 'app/js/home/home.tpl',
     controller: 'HomeCtrl'
   } );
 } ).controller( 'HomeCtrl', function( $scope ) {
-  $scope.hctrl = {
+  $scope.homectrl = {
   };
-  console.log("hello");
+  console.log("homectrl");
 } );

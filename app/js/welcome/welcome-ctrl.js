@@ -7,8 +7,8 @@ angular.module( 'welcome', [] ).config( function( $stateProvider ) {
    } ).controller( 'WelcomeCtrl', function( $scope, $state ) {
   		$scope.welcomectrl = {
   };
-  	console.log("inside welcomectrl");
+  	console.log("welcomectrl");
   	$scope.nextPage = function(  ) {
-  		$state.go( 'login' );
+  		$state.go( 'home.login' );
   	};
 } );
