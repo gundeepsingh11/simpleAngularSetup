@@ -1,4 +1,4 @@
-angular.module( 'home', ['welcome', 'login'] ).config( function( $stateProvider ) {
+angular.module( 'home', ['welcome', 'login', 'dashboard'] ).config( function( $stateProvider ) {
   $stateProvider.state( 'home', {
     url: '/home',
     templateUrl: 'app/js/home/home.tpl',

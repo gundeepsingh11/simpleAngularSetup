@@ -12,7 +12,6 @@ app.use(bodyParser.json());
 // var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.post('/api/login', validateRequest,function(req, res) {
-	console.log(req);
 	if((req.body.email === "demo@gmail.com")&&(req.body.password === "123")){
 
 		res.send({status:200,message:"user succesfully loggedIn"});

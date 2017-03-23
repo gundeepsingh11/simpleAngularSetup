@@ -18,7 +18,7 @@ angular.module( 'login', [] ).config( function( $stateProvider ) {
         if ( result.status == 200 ) {
           // $mdToast.show( $mdToast.simple().textContent( 'Login Successful' ).position( 'top' ).theme(
           //   'success-toast' ).hideDelay( 3000 ) );
-          $state.go( 'home.welcome' );
+          $state.go( 'home.dashboard' );
         } else {
           alert("wrong password or email");
           // $mdToast.show( $mdToast.simple().textContent( 'Invalid Password or Email' ).position( 'top' ).theme(
