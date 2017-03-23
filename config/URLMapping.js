@@ -8,13 +8,12 @@ var controllers = {
 
 
 __app.get('/*', function(req, res) {
-        res.sendfile(__appBaseDir+'/index.html'); // load the single vie// load the single view file (angular will handle the page changes on the front-end)
+        res.sendfile(__appBaseDir+'/index.html'); // load the single view file (angular will handle the page changes on the front-end)
     });
 
 
-
 __app.post(BaseURL+'login', validateRequest,function(req, res) {
-	if((req.body.email == "demo@gmail.com")&&(req.body.password == "123")){	
+	if((req.body.email == "demo@gmail.com")&&(req.body.password == "123")){
 
 		res.send({status:200,message:"user succesfully loggedIn"});
 	}else{
