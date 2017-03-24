@@ -49,6 +49,12 @@ app.post('/api/users', jsonParser, function (req, res) {
 
 app.use(express.static(__dirname + '/'));
 
+app.get('/dashboard', function(req, res) {
+	var id = req.query.id;
+    res.send('Username: Gundeep ');
+    res.end("I have received the ID: " + id);
+
+});
 
 
 app.get('/*',function(req,res){
